@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/calculos.css" />
+    <script src="js/calculos.js"></script>
+    <title>Factorial de n y multiplos</title>
+</head>
+<body>
+    <header>
+        <h1>Factorial de un número pedido al usuario y sus multiplos hasta "X"</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <article class="botones">
+            <h2>OPCIONES</h2>
+            <p>
+                <input type="button" onclick="n = leerNumero()" value="Numero" />
+                <input type="button" onclick="m = leerNumero()" value="Hasta" />
+                <input type="button" onclick="mostrarResultados()" value="Mostrar resultados" />
+            </p>
+            <table class="resultados">
+                <caption>MULTIPLOS</caption>
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Hasta</th>
+                            <th>Multiplos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="td11"></td>
+                            <td id="td12"></td>
+                            <td id="td13"></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </article>
+
+        <article class="botones">
+            <p>
+              <!--  <input type="button" onclick="n = leerNumero()" value="Numero" />
+                <input type="button" onclick="mostrarResultados()" value="Mostrar resultados" /> -->
+            </p>
+            <table class="resultados">
+                <caption>FACTORIAL</caption>
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Factorial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="td1"></td>
+                            <td id="td2"></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

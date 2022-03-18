@@ -1,0 +1,23 @@
+body {background-color: lightblue;}
+table {background-color: white;margin: auto;}
+header {background-color: black;color: white;padding: 2em;}
+* {text-align: center;}
+
+table.resultados {
+    border-collapse: collapse;
+}
+
+table.resultados caption {
+    font-weight: bold;
+    margin-bottom: 1em;border-radius: 6px;
+}
+
+table.resultados th,
+table.resultados td {
+    padding: 0.5em 1em;
+    border: 1px solid grey;border-radius: 6px;
+}
+article.botones input {
+    padding: 0.5em 1em; margin: 0 0.5em; background-color: black;color: white;border-radius: 5px;font-size: large;
+}
+article.botones input:hover {background-color: darkgray;color: black;}
