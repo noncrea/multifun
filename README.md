@@ -1,1 +1,1 @@
-https://noncrea.github.io/multifun/
+https://noncrea.github.io/multifun/index.html
