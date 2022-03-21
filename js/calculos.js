@@ -27,11 +27,20 @@ function multiplosDeHasta() {
         " hasta " + m +
         " son: ";
     multiplo = 0;
-    for (i = 1; multiplo < m ; i++) {
-        multiplo = n * i;
-        if (multiplo > m) break;
+    //for (i = 1; multiplo < m ; i++) {
+    //    multiplo = n * i;
+    //    if (multiplo > m) break;
+    //    mensaje = mensaje + multiplo + " ";}
+    
+    // Con While en vez de For
+    i=1;
+    while (multiplo < m) {
+        multiplo = n*i;
         mensaje = mensaje + multiplo + " ";
-    }
+        i++;
+        }    
+    // hasta aqui lo del while / for
+
     return mensaje;
     
 }
