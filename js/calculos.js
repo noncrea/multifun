@@ -37,7 +37,7 @@ function multiplosDeHasta() {
     while (multiplo < m) {
         multiplo = n*i;
         mensaje = mensaje + multiplo + " ";
-        i++;
+        i++;if (multiplo > m) break;
         }    
     // hasta aqui lo del while / for
 
