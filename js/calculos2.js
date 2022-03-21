@@ -78,3 +78,11 @@ function factorial( n ) {
     }
     return factorial;
 }
+function sumar(s1, s2) {
+    var suma = s1 + s2;
+    return suma;
+}
+function multiplicar(f1, f2) {
+    var producto = f1*f2;
+    return producto;
+}

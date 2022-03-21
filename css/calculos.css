@@ -18,6 +18,20 @@ table.resultados td {
     border: 1px solid grey;border-radius: 6px;
 }
 article.botones input {
-    padding: 0.5em 1em; margin: 0 0.5em; background-color: black;color: white;border-radius: 5px;font-size: large;
-}
+    padding: 0.5em 1em; margin: 0 0.5em; background-color: black;
+    color: white;border-radius: 5px;font-size: large;
+max-width: 20%; }
 article.botones input:hover {background-color: darkgray;color: black;}
+
+#menu ul li {list-style: none;padding: auto;}
+#menu a {text-decoration: none;color: black;}   
+nav ul {
+    display: inline ;
+    justify-content: start;margin-top: 0;
+  }
+  #bot1 {margin-top: -1.5em;}
+  #bot2 {margin-top: 0.5em;}
+  #menu ul li:hover {font-weight: bold;color: white;}
+  body {text-align: center;}
+  main article { display: grid; text-align: center; background-color: white; 
+    margin: auto; max-width: 60%;margin-top: 2em;border-radius: 1em;}

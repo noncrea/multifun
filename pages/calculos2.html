@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="calculos.js"></script>
+    <script src="../js/calculos2.js"></script>
+    <script src="../js/calculos.js"></script>
+    <link rel="stylesheet" href="../css/calculos.css" />
+    <script>
+        x=7; y=45;
+        suma = sumar(x,y);
+        producto = multiplicar (x, y);
+    </script>
 </head>
 <body>
     <header>
         <h1>Distintas maneras de Mostrar Resultados/Scrips</h1>
     </header>
-    <nav>
+    <nav id="menu">
         <h2>MENU</h2>
         <ul>
-            <li>
-                <a href="index.html" title="Calculos">Calculos</a>
+            <li id="bot1">
+                <a href="../index.html" title="Calculos">Calculos</a>
             </li>
-            <li>
-                <a href="pages/calculos2.html" title="Calculos2">CalculosCalculos2</a>
+            <li id="bot2">
+                <a href="calculos2.html" title="Calculos2">Calculos2</a>
             </li>
         </ul>
     </nav>
@@ -27,9 +34,34 @@
             <h2>FACTORIAL</h2>
             <input type="button" onclick="n = leerNumero()" value="Numero pal Factorial" />
             <p>
+                <script id="Fact">
+                    var n = n;
+                    var factorial = factorial( n );
+                </script>
                 <script>
-                    document.write ts22</script>
+                    document.getElementById('Fact').innerHTML = factorial;
+                </script>
             </p>
+        </article>
+        <article>
+            <h2>Multiplos de X hasta Y</h2>
+            <p>
+
+            </p>
+        </article>
+        <article>
+            <h2>Suma de dos Números</h2>
+            <p>
+                <script>
+                    document.write ("La suma de " + x + " más " + y + " es igual a " + suma);
+                </script>
+            </p>
+        </article>
+        <article>
+            <h2>Multiplicar 2 Números</h2>
+            <script>
+                document.write ("La multiplicación de " + x + " por " + y + " es " + producto);
+            </script>
         </article>
     </main>
 </body>
