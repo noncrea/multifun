@@ -20,7 +20,7 @@ table.resultados td {
 article.botones input {
     padding: 0.5em 1em; margin: 0 0.5em; background-color: black;
     color: white;border-radius: 5px;font-size: large;
-max-width: 20%; }
+ }
 article.botones input:hover {background-color: darkgray;color: black;}
 
 #menu ul li {list-style: none;padding: auto;}
@@ -35,3 +35,4 @@ nav ul {
   body {text-align: center;}
   main article { display: grid; text-align: center; background-color: white; 
     margin: auto; max-width: 60%;margin-top: 2em;border-radius: 1em;}
+#botN {max-width: 20%;margin: auto;}
