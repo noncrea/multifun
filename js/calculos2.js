@@ -98,8 +98,10 @@ function leerTexto() {
        // leerTexto();
     }
 
-function mostrarTexts(nome, tex){
-    var textos = getElementById(nome);
-    textos.innerHTML=tex;
+function mostrarTexts() {
+    var name=document.getElementById("nome");
+    var tess=document.getElementById("texto");
+    var redaccion = name + " " + tess;
+    alert (redaccion);
 }
 

@@ -51,5 +51,5 @@ input {
     display: inline-block;margin: 0;text-align: center;
 }
 #textos {
-    background-color: aqua;
+    background-color: aqua;padding: 0.5em 1em;  text-align: center;
 }
