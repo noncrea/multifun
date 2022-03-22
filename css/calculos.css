@@ -4,7 +4,7 @@ header {background-color: black;color: white;padding: 2em;}
 * {text-align: center;}
 
 table.resultados {
-    border-collapse: collapse;
+    border-collapse: collapse;margin-bottom: 3em;
 }
 
 table.resultados caption {
@@ -12,8 +12,7 @@ table.resultados caption {
     margin-bottom: 1em;border-radius: 6px;
 }
 
-table.resultados th,
-table.resultados td {
+table.resultados th, table.resultados td {
     padding: 0.5em 1em;
     border: 1px solid grey;border-radius: 6px;
 }
@@ -21,18 +20,36 @@ article.botones input {
     padding: 0.5em 1em; margin: 0 0.5em; background-color: black;
     color: white;border-radius: 5px;font-size: large;
  }
-article.botones input:hover {background-color: darkgray;color: black;}
+article.botones input:hover {
+    background-color: darkgray;color: black;
+}
 
-#menu ul li {list-style: none;padding: auto;}
-#menu a {text-decoration: none;color: black;}   
+
+#menu a {text-decoration: none;color: black;
+}   
 nav ul {
-    display: inline ;
-    justify-content: start;margin-top: 0;
+    display: flex ; justify-content: center; 
   }
-  #bot1 {margin-top: -1.5em;}
-  #bot2 {margin-top: 0.5em;}
-  #menu ul li:hover {font-weight: bold;color: white;}
-  body {text-align: center;}
-  main article { display: grid; text-align: center; background-color: white; 
-    margin: auto; max-width: 60%;margin-top: 2em;border-radius: 1em;}
-#botN {max-width: 20%;margin: auto;}
+#menu ul li {
+    list-style: none;padding: 0.5em 2em;margin: 10px;background-color: rgb(144, 187, 204);
+}
+#menu ul li:hover {
+    font-weight: bold;color: white;
+}
+body {
+    text-align: center;
+}
+main article { 
+    display: grid; text-align: center; background-color: white; 
+margin: auto; max-width: 60%;margin-top: 2em;border-radius: 1em;
+}
+input {
+    max-width: 20%; margin: auto; margin-bottom: 1em;margin: 0.5em 1em;
+    padding: 0.5em 3em;background-color: lightgrey;border-radius: 10px;font-size: large;
+}
+#nome p{
+    display: inline-block;margin: 0;text-align: center;
+}
+#textos {
+    background-color: aqua;
+}

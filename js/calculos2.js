@@ -86,3 +86,20 @@ function multiplicar(f1, f2) {
     var producto = f1*f2;
     return producto;
 }
+function leerNome() {
+    nome = prompt("escribe un nombre");
+    }
+
+
+function leerTexto() {
+    tex = prompt("escribe un texto");
+   // if (!isNaN(tex)) {
+     //   return "Escribe un texto, Gañán";
+       // leerTexto();
+    }
+
+function mostrarTexts(nome, tex){
+    var textos = getElementById(nome);
+    textos.innerHTML=tex;
+}
+

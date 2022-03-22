@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/calculos2.js"></script>
+    <script src="../js/calculos.js"></script>
+    <link rel="stylesheet" href="../css/calculos.css" />
+    <script>
+        x=7; y=45;
+        suma = sumar(x,y);
+        producto = multiplicar (x, y);
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Distintas maneras de Mostrar Resultados/Scrips GETELEMENT</h1>
+    </header>
+    <nav id="menu">
+        <h2>MENU</h2>
+        <ul>
+            <li id="bot1">
+                <a href="../index.html" title="Calculos">Calculos</a>
+            </li>
+            <li id="bot2">
+                <a href="documentwrite.html" title="Calculos2">Document.Write</a>
+            </li>
+            <li id="bot3">
+                <a href="getelement.html" title="Calculos2">GetElement</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article id="nome">
+            <h2>Trabajos con "getElementById"</h2>
+           <p>
+                <input type="button" onclick="nome = leerNome()" value="nome" id="nome" />
+                <input type="button" onclick="tex = leerTexto()" value="texto" id="texto" />
+                <input type="button" onclick="textos = mostrarTexts('nome')" value="Redaccion" id="textos" />
+            </p>
+        </article>
+
+    </main>
+</body>
+</html>
