@@ -106,11 +106,11 @@ function mostrarTexts(nome,texto) {
     toertexto = "Tu muñeco se llama: " + nombre + " " + tess;
     alert (toertexto);
 }
-function mostrarInfo(PorPantalla){
-    var PorPantalla=getElementById(id);
+function mostrarInfo(){    
     var nombre=nome;
     var tess=texto;
     toertexto = "Tu muñeco se llama: " + nombre + " " + tess;
+    var PorPantalla=toertexto;
     PorPantalla.innerHTML=toertexto;
 }
 
