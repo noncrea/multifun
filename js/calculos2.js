@@ -88,20 +88,29 @@ function multiplicar(f1, f2) {
 }
 function leerNome() {
     nome = prompt("escribe un nombre");
+    return nome;
     }
 
 
 function leerTexto() {
-    tex = prompt("escribe un texto");
+    texto = prompt("escribe un texto");
+    return texto;
    // if (!isNaN(tex)) {
      //   return "Escribe un texto, Gañán";
        // leerTexto();
     }
 
-function mostrarTexts() {
-    var name=document.getElementById("nome");
-    var tess=document.getElementById("texto");
-    var redaccion = name + " " + tess;
-    alert (redaccion);
+function mostrarTexts(nome,texto) {
+    var nombre=nome;
+    var tess=texto;
+    toertexto = "Tu muñeco se llama: " + nombre + " " + tess;
+    alert (toertexto);
+}
+function mostrarInfo(PorPantalla){
+    var PorPantalla=getElementById(id);
+    var nombre=nome;
+    var tess=texto;
+    toertexto = "Tu muñeco se llama: " + nombre + " " + tess;
+    PorPantalla.innerHTML=toertexto;
 }
 

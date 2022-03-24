@@ -36,10 +36,12 @@
         <article id="nome">
             <h2>Trabajos con "getElementById"</h2>
            <p>
-                <input type="button" onclick="nome = leerNome()" value="nome" id="nome" />
-                <input type="button" onclick="tex = leerTexto()" value="texto" id="texto" />
-                <input type="button" onclick="mostrarTexts()" value="Redaccion" id="textos" />
+                <input type="button" onclick="nome=leerNome()" value="nombre" id="nomepollo" />
+                <input type="button" onclick="texto=leerTexto()" value="comentario" id="texto" />
+                <input type="button" onclick="mostrarTexts(nome,texto)" value="Alerta Datos" id="textos" />
+                <input type="button" onclick="mostrarInfo(PorPantalla)" value="En pantalla" id="pantalla" />
             </p>
+            <p id="PorPantalla"></p>
         </article>
 
     </main>

@@ -46,10 +46,19 @@ margin: auto; max-width: 60%;margin-top: 2em;border-radius: 1em;
 input {
     max-width: 20%; margin: auto; margin-bottom: 1em;margin: 0.5em 1em;
     padding: 0.5em 3em;background-color: lightgrey;border-radius: 10px;font-size: large;
+    
 }
 #nome p{
     display: inline-block;margin: 0;text-align: center;
 }
 #textos {
     background-color: aqua;padding: 0.5em 1em;  text-align: center;
+}
+
+#nome p input {
+    margin: 0; padding: 0;
+    text-align: center;margin: 1em;padding: 0.5em 1em;
+}
+#pantalla {
+    background-color: white;
 }
