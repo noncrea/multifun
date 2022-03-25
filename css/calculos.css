@@ -62,3 +62,16 @@ input {
 #pantalla {
     background-color: white;
 }
+p, ul, li {list-style: none;}
+#datos {background-color: blue;color: white;padding: 1em;margin: 0.5em;border-radius: 5px;}
+#detalle {background-color: lightblue;}
+#bmostras {display: flex;text-align: center;}
+#bmostras p button {background-color: blue;color: white;padding: 0.2em 2em;
+    margin: auto;border-radius: 8px;margin-left: 0.5em;margin-right: 0.5eteddm;}
+#pollito {text-align: center;margin: auto;}
+
+#noscript {
+    color: black;text-align: center;margin: auto; margin-bottom: 5em;   
+}
+
+#frame {margin: auto;margin-bottom: 2em;}

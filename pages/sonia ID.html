@@ -48,6 +48,9 @@
             <li id="bot4">
                 <a href="/pages/sonia ID.html" title="Calculos2">Sonia IDS</a>
             </li>
+            <li id="bot5">
+                <a href="noscript.html" title="Calculos2">NoScript</a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -78,22 +81,29 @@
             <p>
                 <button onclick="v = leerTexto()">Vidas</button>
             </p>
-
-            <p>
-                <button onclick="mostrarTodo('datos', pj, ald, clan, sp, v)">Mostrar todo</button>
-            </p>
-            <p>
-                <button onclick="mostrarLista('datos', pj)">Mostrar Lista</button>
-            </p>
-
+            <article id="bmostras">
+                <p>
+                    <button onclick="mostrarTodo('datos', pj, ald, clan, sp, v)">Mostrar todo</button>
+                </p>
+                <p>
+                    <button onclick="mostrarLinea('datos', pj, ald, clan, sp, v)">Mostrar en Linea</button>
+                </p>
+                <p>
+                    <button onclick="mostrarLista('datos', pj, ald, clan, sp, v)">Mostrar en Lista</button>
+                </p>
+                <p>
+                    <button onclick="mostrarDeuna('datos', pj, ald, clan, sp, v)">todos a una</button>
+                </p>
+            </article>
+        
+            <ul id="datos"></ul>
+        </article>
+        <article id="detalle">
             <p id="pj1"></p>
             <p id="ald1"></p>
             <p id="clan1"></p>
             <p id="sp1"></p>
-
-            <ul id="datos"></ul>
         </article>
-
         <article>
             <h2>Escribir factorial de un número con document.write()</h2>
             <p>

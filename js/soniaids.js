@@ -67,7 +67,7 @@ function mostrarTodo(id, personaje, aldea, clan, poder, vidas) {
     elemento.innerHTML = lis;
 }
 
-function mostrarLista(id, personaje) {
+function mostrarLinea(id, personaje, aldea, clan, poder, vidas) {
 
     var personaje = "<strong>Personaje: </strong>" + personaje;
     var aldea = "<strong>Aldea: </strong>" + aldea;
@@ -77,7 +77,7 @@ function mostrarLista(id, personaje) {
 
     var lista=document.createElement("li");
 
-    lista.innerHTML=personaje;
+    lista.innerHTML=personaje + ", " + aldea + ", " + clan + ", " + poder + ", " + vidas;
     //con el inner lo mete en el html
 
     var cajadatos=document.getElementById(id); 
@@ -97,6 +97,62 @@ function mostrarLista(id, personaje) {
     // Insertamos el texto pasado por parámetro
     // al elemento con id pasado por parámetro
     elemento.innerHTML = lis; */
+}
+function mostrarLista(id, personaje, aldea, clan, poder, vidas) {
+
+    var personaje = "<strong>Personaje: </strong>" + personaje;
+    var aldea = "<strong>Aldea: </strong>" + aldea;
+    var clan = "<strong>Clan: </strong>" + clan;
+    var poder = "<strong>Superpoder: </strong>" + poder;
+    var vidas = "<strong>Vidas: </strong>" + vidas;
+
+    var lista=document.createElement("li");
+
+    lista.innerHTML=personaje;
+    //con el inner lo mete en el html
+
+    var cajadatos=document.getElementById(id); 
+    //este id es el que tu le mandes llamar desde html
+
+    cajadatos.appendChild(lista);
+
+    lista=document.createElement("li");
+    lista.innerHTML=aldea;
+    cajadatos.appendChild(lista);
+
+    lista=document.createElement("li");
+    lista.innerHTML=clan;
+    cajadatos.appendChild(lista);
+
+    lista=document.createElement("li");
+    lista.innerHTML=poder;
+    cajadatos.appendChild(lista);
+
+    lista=document.createElement("li");
+    lista.innerHTML=vidas;
+    cajadatos.appendChild(lista);
+    
+    var fondo = document.getElementById('datos');
+    fondo.style.backgroundColor = "lightblue";
+    fondo.style.color = "black";
+
+}
+
+function mostrarDeuna(id, personaje, aldea, clan, poder, vidas) {
+
+    var personaje = "<strong>Personaje: </strong>" + personaje;
+    var aldea = "<strong>Aldea: </strong>" + aldea;
+    var clan = "<strong>Clan: </strong>" + clan;
+    var poder = "<strong>Superpoder: </strong>" + poder;
+    var vidas = "<strong>Vidas: </strong>" + vidas;
+    var lista=document.getElementById(id);
+
+    datos.addChild (lista, "li", personaje);
+    datos.addChild (lista, "li", aldea);
+    datos.addChild (lista, "li", clan);
+    datos.addChild (lista, "li", poder);
+    datos.addChild (lista, "li", vidas);
+
 }
 
 function mostrarMultiplo(n, m) {

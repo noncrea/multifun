@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NoScript</title>
     <script src="../js/calculos2.js"></script>
     <script src="../js/calculos.js"></script>
     <link rel="stylesheet" href="../css/calculos.css" />
@@ -13,10 +13,13 @@
         suma = sumar(x,y);
         producto = multiplicar (x, y);
     </script>
+    <script>
+        alert("Asi se ve con JavaScript activado");
+    </script>
 </head>
 <body>
     <header>
-        <h1>Distintas maneras de Mostrar Resultados/Scrips DOCUMENT.WRITE</h1>
+        <h1>Prueba NoScript</h1>
     </header>
     <nav id="menu">
         <h2>MENU</h2>
@@ -37,42 +40,20 @@
                 <a href="noscript.html" title="Calculos2">NoScript</a>
             </li>
         </ul>
-        </ul>
     </nav>
     <main>
-        <article>
-            <h2>FACTORIAL</h2>
-            <input type="button" onclick="n = leerNumero()" value="Numero pal Factorial" id="botN" />
-            <p>
-                <script id="Fact">
-                    var n = n;
-                    var factorial = factorial( n );
-                </script>
-                <script>
-                    document.getElementById('Fact').innerHTML = factorial;
-                </script>
-            </p>
+        <article id="noscript">
+            <h2>NoScript</h2>
+            <img src="../imag/pollito.gif" alt="pollito" id="pollito">
+                <p>si desactivamos javascript en el navegador el mapa de abajo no se vería</p>                         
+                <iframe id="frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11813.832778219281!2d-8.700094!3d42.2473868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4326f03ee93ca99b!2sGranja%20Lauri%C3%B1a!5e0!3m2!1ses!2ses!4v1648197829490!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <noscript>
+                <p>Asin con Java desactivaooooo, Gañan!!</p>
+            </noscript>
+       
         </article>
-        <article>
-            <h2>Multiplos de X hasta Y</h2>
-            <p>
+    
 
-            </p>
-        </article>
-        <article>
-            <h2>Suma de dos Números</h2>
-            <p>
-                <script>
-                    document.write ("La suma de " + x + " más " + y + " es igual a " + suma);
-                </script>
-            </p>
-        </article>
-        <article>
-            <h2>Multiplicar 2 Números</h2>
-            <script>
-                document.write ("La multiplicación de " + x + " por " + y + " es " + producto);
-            </script>
-        </article>
     </main>
 </body>
 </html>
