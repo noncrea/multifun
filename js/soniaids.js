@@ -137,6 +137,11 @@ function mostrarLista(id, personaje, aldea, clan, poder, vidas) {
     fondo.style.color = "black";
 
 }
+function meteUno(elemento, tag, contenido) {
+    objeto = document.createElement (tag);
+    objeto.innerHTML=contenido;
+    elemento.appendChild (objeto);
+}
 
 function mostrarDeuna(id, personaje, aldea, clan, poder, vidas) {
 
@@ -147,11 +152,11 @@ function mostrarDeuna(id, personaje, aldea, clan, poder, vidas) {
     var vidas = "<strong>Vidas: </strong>" + vidas;
     var lista=document.getElementById(id);
 
-    datos.addChild (lista, "li", personaje);
-    datos.addChild (lista, "li", aldea);
-    datos.addChild (lista, "li", clan);
-    datos.addChild (lista, "li", poder);
-    datos.addChild (lista, "li", vidas);
+    meteUno (lista, "li", personaje);
+    meteUno (lista, "li", aldea);
+    meteUno (lista, "li", clan);
+    meteUno (lista, "li", poder);
+    meteUno (lista, "li", vidas);
 
 }
 
