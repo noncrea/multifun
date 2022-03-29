@@ -93,6 +93,12 @@
                 <p>
                     <button onclick="mostrarDeuna('datos', pj, ald, clan, sp, v)">todos a una</button>
                 </p>
+                <p>
+                    <button onclick="strongIncluido('datos', pj, ald, clan, sp, v)">Strong Incluido</button>
+                </p>
+                <p>
+                    <button onclick="ToJunto('datos', pj, ald, clan, sp, v)">ToConFunciones</button>
+                </p>
             </article>
         
             <ul id="datos"></ul>
@@ -103,14 +109,16 @@
             <p id="clan1"></p>
             <p id="sp1"></p>
         </article>
-        <article>
+        <article id="nfact">
             <h2>Escribir factorial de un número con document.write()</h2>
             <p>
-                <input type="button" onclick="n = leerNumero()" value="Numero a calcular su factorial" />
+                <input  type="button" onclick="n = leerNumero()" value="Factorial de" />
             </p>
+            <p>
             <script>
                 document.write("El factorial de " + n + " es " + factorial);
             </script>
+            </p>
         </article>
         <article>
             <h2>Escribir los múltiplos de n hasta m</h2>

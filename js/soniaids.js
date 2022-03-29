@@ -144,19 +144,67 @@ function meteUno(elemento, tag, contenido) {
 }
 
 function mostrarDeuna(id, personaje, aldea, clan, poder, vidas) {
-
     var personaje = "<strong>Personaje: </strong>" + personaje;
     var aldea = "<strong>Aldea: </strong>" + aldea;
     var clan = "<strong>Clan: </strong>" + clan;
     var poder = "<strong>Superpoder: </strong>" + poder;
     var vidas = "<strong>Vidas: </strong>" + vidas;
     var lista=document.getElementById(id);
-
+//este meteUno es la funcion de arriba
     meteUno (lista, "li", personaje);
     meteUno (lista, "li", aldea);
     meteUno (lista, "li", clan);
     meteUno (lista, "li", poder);
     meteUno (lista, "li", vidas);
+}
+function strongIncluido (id, personaje, aldea, clan, poder, vidas) {
+    var negrita=document.createElement("strong");
+    negrita.innerHTML="Personaje: ";
+    var personaje = negrita.outerHTML + personaje;
+//outerHTML transforma el "objeto" en "editable"
+    negrita.innerHTML="Aldea: ";
+    var aldea = negrita.outerHTML + aldea;
+    var lista=document.getElementById(id);
+    negrita.innerHTML="Clan: ";
+    var clan = negrita.outerHTML + clan;
+    var lista=document.getElementById(id);
+    negrita.innerHTML="Poder: ";
+    var poder = negrita.outerHTML + poder;
+    var lista=document.getElementById(id);
+    negrita.innerHTML="Vidas: ";
+    var vidas = negrita.outerHTML + vidas;
+    var lista=document.getElementById(id);
+//este meteUno es la funcion de arriba
+    meteUno (lista, "li", personaje);
+    meteUno (lista, "li", aldea);
+    meteUno (lista, "li", clan);
+    meteUno (lista, "li", poder);
+    meteUno (lista, "li", vidas);
+}
+
+
+function CrearSubelemento (tag1, tag2, prefijo, sufijo){
+    var subelemento=document.createElement(tag1);
+    subelemento.innerHTML=prefijo;
+    var elemento=document.createElement(tag2);
+    elemento.appendChild(subelemento);
+    elemento.innerHTML=sufijo;
+    return elemento;//aqui devuelve el elemento final con el sufijo incluido
+}
+//funcion Tojunto llama a crearsubelemento
+function ToJunto (id, personaje, aldea, clan, poder, vidas) {
+
+
+    list=CrearSubelemento("strong", "li", "Personaje: ", personaje);
+    lista.appendChild(list);
+    list=CrearSubelemento("strong", "li", "Aldea: ", aldea);
+    lista.appendChild(list);
+    list=CrearSubelemento("strong", "li", "Clan: ", clan);
+    lista.appendChild(list);
+    list=CrearSubelemento("strong", "li", "Poder: ", poder);
+    lista.appendChild(list);
+    list=CrearSubelemento("strong", "li", "Vidas: ", vidas);
+    lista.appendChild(list);
 
 }
 

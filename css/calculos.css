@@ -2,6 +2,7 @@ body {background-image: url(../imag/emc2.jpg); }
 table {background-color: white;margin: auto;}
 header {background-color: black;color: white;padding: 2em;}
 * {text-align: center;}
+article p {margin: auto;text-align: center;padding: 0.5em;margin: auto;}
 
 table.resultados {
     border-collapse: collapse;margin-bottom: 3em;
@@ -33,8 +34,11 @@ nav ul {
 #menu ul li {
     list-style: none;padding: 0.5em 2em;margin: 10px;background-color: rgb(144, 187, 204);
 }
+#menu ul li:hover a {
+    font-weight: bold;color: white;background-color: blue;
+}
 #menu ul li:hover {
-    font-weight: bold;color: white;
+    ;background-color: blue;
 }
 body {
     text-align: center;
@@ -65,9 +69,11 @@ input {
 p, ul, li {list-style: none;}
 #datos {background-color: blue;color: white;padding: 1em;margin: 0.5em;border-radius: 5px;}
 #detalle {background-color: lightblue;}
-#bmostras {display: flex;text-align: center;}
-#bmostras p button {background-color: blue;color: white;padding: 0.2em 2em;
-    margin: auto;border-radius: 8px;margin-left: 0.5em;margin-right: 0.5eteddm;}
+#bmostras {display: flex;text-align: center;margin: auto;}
+#bmostras p button {background-color: blue;color: white;
+    margin: auto;border-radius: 8px;width: 100%;padding:auto;text-align: center;}
+#bmostras p:hover button {font-weight: bolder;background-color: black;}
+
 #pollito {text-align: center;margin: auto;}
 
 #noscript {
@@ -75,3 +81,9 @@ p, ul, li {list-style: none;}
 }
 
 #frame {margin: auto;margin-bottom: 2em;}
+h2 {background-color: rgb(0, 28, 153);color: white;padding: 0.5em;margin-top: 0;}
+#nfact {width: auto;display: block;text-justify: auto;}
+#nfact value {color: brown;}
+#nfact input:hover { background-color: darkgrey;
+
+}
