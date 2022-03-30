@@ -2,6 +2,13 @@ body {background-image: url(../imag/emc2.jpg); }
 table {background-color: white;margin: auto;}
 header {background-color: black;color: white;padding: 2em;}
 * {text-align: center;}
+
+input {
+    text-decoration: none; align-items: center;
+}
+input:hover {background-color: black;color: white;}
+
+
 article p {margin: auto;text-align: center;padding: 0.5em;margin: auto;}
 
 table.resultados {
@@ -33,6 +40,7 @@ nav ul {
   }
 #menu ul li {
     list-style: none;padding: 0.5em 2em;margin: 10px;background-color: rgb(144, 187, 204);
+    display: flex;justify-items: auto;
 }
 #menu ul li:hover a {
     font-weight: bold;color: white;background-color: blue;
@@ -48,7 +56,7 @@ main article {
 margin: auto; max-width: 60%;margin-top: 2em;border-radius: 1em;
 }
 input {
-    max-width: 20%; margin: auto; margin-bottom: 1em;margin: 0.5em 1em;
+    max-width: 20%; margin: auto; margin-bottom: 1em;
     padding: 0.5em 3em;background-color: lightgrey;border-radius: 10px;font-size: large;
     
 }
@@ -69,10 +77,10 @@ input {
 p, ul, li {list-style: none;}
 #datos {background-color: blue;color: white;padding: 1em;margin: 0.5em;border-radius: 5px;}
 #detalle {background-color: lightblue;}
-#bmostras {display: flex;text-align: center;margin: auto;}
+#bmostras {display: inline-flex;justify-content: center;}
 #bmostras p button {background-color: blue;color: white;
-    margin: auto;border-radius: 8px;width: 100%;padding:auto;text-align: center;}
-#bmostras p:hover button {font-weight: bolder;background-color: black;}
+    border-radius: 8px;width: 90px; height: 50px;}
+#bmostras p button:hover {background-color: black;}
 
 #pollito {text-align: center;margin: auto;}
 
@@ -85,5 +93,9 @@ h2 {background-color: rgb(0, 28, 153);color: white;padding: 0.5em;margin-top: 0;
 #nfact {width: auto;display: block;text-justify: auto;}
 #nfact value {color: brown;}
 #nfact input:hover { background-color: darkgrey;
-
 }
+#calculando p input {
+    padding: auto;margin: 0;text-decoration: none;text-align: center;
+    display: inline; list-style: none;
+}
+#calculando p input button {margin: auto; padding: auto;color: darkgreen;background-color: brown;}

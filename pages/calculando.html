@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/calculos2.js"></script>
+    <script src="../js/calculos.js"></script>
+    <script src="../js/soniaids.js"></script>
+    <script src="../js/calculando.js"></script>
+    <link rel="stylesheet" href="../css/calculos.css" />
+    <title>El mayor de los 2 números</title>
+    <script>
+        var n;
+        var factorial = factorial(n);
+
+        var a = 10;
+        var b = 1000;
+        var tmultiplos = multiplosDeHasta(a, b);
+
+        var x = 7;
+        var y = 100;
+        var suma = sumar(x, y);
+
+        var p1 = 2;
+        var p2 = 5;
+        var producto = multiplicar(p1, p2);
+    </script>
+        <script>
+            // Definir variables
+            var n1 = 0;
+            var n2 = 0;
+    
+            // Funcion para leer numeros Reales
+            function leerNumero() {
+                num = parseFloat(
+                    prompt("Porfi, escribe un número")
+                );
+                return num;
+            }
+    
+            // Función que devuelve el mayor de
+            // dos número
+    
+            function mayorMenor () {
+                resultado = ( n1 > n2 )
+                    ? n1 + " es mayor que " + n2
+                    : n2 + " es mayor que " + n1;
+    
+                return resultado;
+            }
+        </script>
+
+</head>
+
+<body>
+    <header id="header1">
+        <h1>Devolver, cual de los 2 números es mayor</h1>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li id="bot1">
+                <a href="../index.html" title="Calculos">Calculos</a>
+            </li>
+            <li id="bot2">
+                <a href="documentwrite.html" title="Calculos2">Document.Write</a>
+            </li>
+            <li id="bot3">
+                <a href="getelement.html" title="getElement">GetElement</a>
+            </li>
+            <li id="bot4">
+                <a href="sonia ID.html" title="Sonia">Sonia IDS</a>
+            </li>
+            <li id="bot5">
+                <a href="noscript.html" title="NoScrip">NoScript</a>
+            </li>
+            <li id="bot6">
+                <a href="calculando.html" title="Calculando">Calculando</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article id="calculando">
+            <h2>Cual de los números es mayor</h2>
+            <p>
+                <input
+                    type="button"
+                    onclick="n1 = leerNumero()"
+                    value="Primer número" />
+                <input
+                    type="button"
+                    onclick="n2 = leerNumero()"
+                    value="Segundo número" />
+                <input
+                    type="button"
+                    onclick="alert( mayorMenor() )"
+                    value="El mayor es ..." />
+            </p>
+        </article>
+        </main>
+    <footer></footer>
+</body>
+
