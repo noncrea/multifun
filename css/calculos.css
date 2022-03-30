@@ -57,7 +57,7 @@ margin: auto; max-width: 60%;margin-top: 2em;border-radius: 1em;
 }
 input {
     max-width: 20%; margin: auto; margin-bottom: 1em;
-    padding: 0.5em 3em;background-color: lightgrey;border-radius: 10px;font-size: large;
+    padding: 0.5em 3em;background-color: lightgrey;border-radius: 10px;font-size: large;font-size: inherit;
     
 }
 #nome p{
@@ -94,8 +94,25 @@ h2 {background-color: rgb(0, 28, 153);color: white;padding: 0.5em;margin-top: 0;
 #nfact value {color: brown;}
 #nfact input:hover { background-color: darkgrey;
 }
-#calculando p input {
-    padding: auto;margin: 0;text-decoration: none;text-align: center;
-    display: inline; list-style: none;
+#calculando p {
+    display: inline-block;margin: 0;text-align: center;
 }
-#calculando p input button {margin: auto; padding: auto;color: darkgreen;background-color: brown;}
+#calculando p input {
+    margin: 0; padding: 0;
+    text-align: center;margin: 1em;padding: 0.5em 1em;font-size: inherit;
+}
+#botN {margin: 0; padding: 0;display: inline-block;
+    text-align: center;margin: auto;padding: 0.5em; align-items: center; font-size: inherit; } 
+#solto {
+    background-color: transparent;
+    color: white;text-align: center;font-size: xx-large;padding: auto;margin-top: 2em;
+}
+#suma2 p { margin: 0; padding: 0;display: inline-block;margin: 0;text-align: center;}
+#suma2 p input {
+    text-align: center;margin: 1em;padding: auto;font-size: inherit;
+}
+#b2 {background-color: rgb(166, 166, 224);}
+#b2:hover {background-color: darkblue;}
+#suma3 {margin: 0; padding: 0;display: inline-block;margin: 0;text-align: center;}
+#suma3 p input {    text-align: center;margin: 1em;padding: auto;font-size: inherit;
+}

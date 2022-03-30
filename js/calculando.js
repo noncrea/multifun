@@ -11,9 +11,7 @@
 
         // Funcion para leer numeros Reales
         function leerNumero() {
-            num = parseFloat(
-                prompt("Porfi, escribe un número")
-            );
+            num = parseFloat(prompt("Porfi, escribe un número"));
             return num;
         }
 

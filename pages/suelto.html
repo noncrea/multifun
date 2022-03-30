@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/calculos.css" />
+
+    <script>
+        //comentario cabeza - de 1 linea en el script
+        var nome="nen";
+        var apellido="rodri";
+        var N1=0;
+        var N2=0;
+        var tm=0;
+    </script>
+    <script>
+        function leerNum() {
+            var num = parseFloat(prompt ("dime un Numero"));
+            return num;
+        }
+        function suma(){
+            var R=N1+N2;
+            alert (R);
+        }
+        function enpantalla(N1, N2){
+            document.getElementById(pantalla).innerHTML=suma2(N1,N2);         
+        }
+        function suma2(){
+            var solution=N1+N2;
+            return solution;
+        }
+        function tabla(){
+            var tab
+            for (i=0;i<=10;i++) {
+            tab=tm*i;
+            document.write ("<li>");
+                document.write (tm + " x " + i + " = " + tab);
+            document.write ("<li>");
+        }}
+    </script>
+</head>
+<body onload = "alert('cargao')">
+    <header>
+        <h1>S C R I P T S</h1>
+    </header>
+    <main>
+        <article id="solto">
+        <script>
+        /* coment corpo de varias
+        lineas */
+            document.write ("Escribiendo en el cuerpo");
+            document.write("<br />");
+            document.write ("Nome: " + nome + ". " + "Apelido: " + apellido + ".");
+        </script>
+        </article>
+        <article id="suma2">
+            <h2>+2</h2>
+            <p>
+            <input type="button" onclick="N1=leerNum()" value ="N1" />
+            <input type="button" onclick="N2=leerNum()" value ="N2" />
+            <input id="b2" type="button" onclick="suma()" value ="suma" />
+            <input id="br" type="button" onclick="enpantalla(pantalla)" value ="solucion" />
+            </p>
+            <p id="pantalla">
+            </p>
+        </article>
+        <article id="suma3">
+            <h2>tabla de multiplicar</h2>
+            <p>
+            <input type="button" onclick="tm=leerNum()" value ="Numero pa multiplicar" />
+            <input type="button" onclick="tabla()" value ="tabla" />
+            </p>
+        </article>
+    </main>
+    
+</body>
+</html>
