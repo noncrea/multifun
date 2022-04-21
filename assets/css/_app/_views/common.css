@@ -1,0 +1,77 @@
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.color-success {
+    color: var(--color-success);
+}
+
+.color-danger {
+    color: var(--color-danger);
+}
+
+.color-warning {
+    color: var(--color-warning);
+}
+
+.color-light {
+    color: var(--color-light);
+}
+
+.color-dark {
+    color: var(--color-dark);
+}
+
+.color-required {
+    color: tomato;
+}
+
+.color-optional {
+    color: inherit;
+}
+
+.color-info {
+    color: steelblue;
+}
+
+.small {
+    font-size: small;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--color-body);
+    line-height: 1.6;
+}
+
+body main article h2 {
+    color: var(--color-b);
+}
+
+@media screen and (max-width: 30rem) {
+    body main {
+        padding: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    body main {
+        padding: 5vw;
+    }
+}
+
+@media screen and (max-width: 90rem) {
+    body main {
+        padding: 7.5vw;
+    }
+}
+
+@media screen and (min-width: 91rem) {
+    body main {
+        padding: 10vw;
+    }
+}
