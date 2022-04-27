@@ -1,0 +1,146 @@
+<!-- Declaración del tipo de documento HTML, siempre en la 1ª línea -->
+<!DOCTYPE html>
+<!-- Elemento html. Atributos lenguaje y dirección de lectura -->
+<html lang="es" dir="ltr">
+<!-- Cabecera oculta del documento web que solo ven los robots -->
+
+<head>
+    <!-- Juego de caracteres de casi todos los idiomas humanos (incluidos ñ, tildes ...) -->
+    <meta charset="utf-8" />
+    <!-- Escala inicial y renderizado _responsive_ por el ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compatibilidad con Microsoft Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Indéxame NO y sígueme NO -->
+    <meta name="robots" content="noIndex, noFollow" />
+    <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
+    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303: Tratamiento de textos con CSS" />
+    <!-- Ruta al favicon -->
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <!-- Ruta a las hojas de estilos -->
+    <link rel="stylesheet" href="../../assets/css/application.css" />
+
+    <!-- Título de la pestaña del navegador -->
+    <title>Imágenes CSS | UF1303</title>
+</head>
+
+<body>
+    <!-- El header es la cabecera de la página web lleva el único encabezado h1 de la página -->
+    <header class="distribute">
+        <a href="../../index.html" title="Inicio">
+            <figure class="logo"></figure>
+            <h1 class="pechado">MF0951</h1>
+        </a>
+    </header>
+    <nav class="main-center">
+        <h2 class="pechado">Menú Principal</h2>
+        <input id="icon-menu" name="icon-menu" type="checkbox" />
+        <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar">Menú</label>
+
+        <ul class="principal">
+            <li>
+                <a href="../formularios.html">Formularios</a>
+            </li>
+            <li>
+                <a href="index.html">CSS</a>
+                <ul>
+                    <li>
+                        <a href="textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="#">Imágenes</a>
+                    </li>
+                    <li>
+                        <a href="#">Vínculo 2.c</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Vínculo 3</a>
+            </li>
+            <li>
+                <a href="../contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="tema textos agua justify">
+            <header class="portada imagenes image-before">
+                <h2>Imágenes en CSS</h2>
+            </header>
+            <article>
+                <h3>Referencias teóricas</h3>
+                <p><strong>Referencias</strong>: </p>
+                <ul>
+                    <li>
+                        <a href="../assets/pdf/UF1303_Elaboracion-hojas-de-estilo.pdf>">
+                            UF1303 - Elaboración de hojas de estilos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../assets/pdf/CSS_Manual_rapido.pdf>">
+                            Manual Rápido de CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../assets/pdf/CSS_Guia_ref_rap.pdf>">
+                            Guía de referencia rápida CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/background-image">
+                            background-image | MDN Web Docs (moz://a)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://uniwebsidad.com/libros/css/capitulo-8">
+                            Introducción a CSS > Imágenes | uniwebsidad
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>Imágenes en CSS</h2>
+                <p>
+                    La propiedad background-image se emplea para establecer la imagen de fondo de cada elemento. La imagen se muestra en la zona que ocupan el contenido y el relleno del elemento, justo hasta su borde.
+                </p>
+                <p>
+                    Para indicar la imagen que se muestra como fondo de un elemento, se utiliza una URL. Los navegadores no restringen el tipo de URL que se pueden utilizar, por lo que pueden ser URL externas/internas y URL relativas/absolutas.
+                </p>
+                <p>
+                    La URL de la imagen que se quiere mostrar se incluye dentro de los paréntesis de la palabra url(). De forma opcional, el valor de la URL se puede encerrar entre comillas simples o entre comillas dobles.
+                </p>
+                <p>
+                    Por defecto el CSS repite ( background-repeat ) la imagen de fondo ( background-image ) en todas las direcciones, tantas veces como fuera necesario, hasta cubrir completamente el elemento. Es exactamente lo que hacen los patrones. Si la imagen es más grande de lo necesario podemos utilizar la propiedad background-sizestar para establecer el tamaño de la imagen que se repite
+                </p>
+                <h3>Elementos SVG</h3>
+                <p>
+                    Si los elementos svg están guardados en documentos .svg externos podemos utilizarlos como imagen de fondo de la misma manera como lo hacemos con las imágenes jpg, png, gif:
+                </p>
+            </article>
+
+            <article class="imagen">
+                <h2>Ejemplos de imágenes con CSS</h2>
+                <p>Aplicando opacidad</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2 class="pechado">Pie de página</h2>
+        <ul class="validadores">
+            <li class="validator cross-centro">
+                <a href="https://validator.w3.org/nu/" target="_blank" title="Documento HTML5 validado con Nu Html Checker">
+                    <figure class="xhtml5"></figure>
+                </a>
+            </li>
+            <li class="validator cross-centro">
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="Esta página web es un documento CSS versión 3 + SVG válido!">
+                    <figure class="w3c"></figure>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    </body>
+
+</html>

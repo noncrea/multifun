@@ -1,0 +1,238 @@
+<!-- Declaración del tipo de documento HTML, siempre en la 1ª línea -->
+<!DOCTYPE html>
+<!-- Elemento html. Atributos lenguaje y dirección de lectura -->
+<html lang="es" dir="ltr">
+<!-- Cabecera oculta del documento web que solo ven los robots -->
+
+<head>
+    <!-- Juego de caracteres de casi todos los idiomas humanos (incluidos ñ, tildes ...) -->
+    <meta charset="utf-8" />
+    <!-- Escala inicial y renderizado _responsive_ por el ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compatibilidad con Microsoft Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Indéxame NO y sígueme NO -->
+    <meta name="robots" content="noIndex, noFollow" />
+    <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
+    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303: Tratamiento de textos con CSS" />
+    <!-- Ruta al favicon -->
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <!-- Ruta a las hojas de estilos -->
+    <link rel="stylesheet" href="../../assets/css/application.css" />
+
+    <!-- Título de la pestaña del navegador -->
+    <title>Textos CSS | UF1303</title>
+</head>
+
+<body>
+    <!-- El header es la cabecera de la página web lleva el único encabezado h1 de la página -->
+    <header class="distribute">
+        <a href="../../index.html" title="Inicio">
+            <figure class="logo"></figure>
+            <h1 class="pechado">MF0951</h1>
+        </a>
+    </header>
+
+    <nav class="main-center">
+        <h2 class="pechado">Menú Principal</h2>
+        <input id="icon-menu" name="icon-menu" type="checkbox" />
+        <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar">Menú</label>
+
+        <ul class="principal">
+            <li>
+                <a href="../formularios.html">Formularios</a>
+            </li>
+            <li>
+                <a href="index.html">CSS</a>
+                <ul>
+                    <li>
+                        <a href="#">Textos</a>
+                    </li>
+                    <li>
+                        <a href="imagenes.html">Imágenes</a>
+                    </li>
+                    <li>
+                        <a href="#">Vínculo 2.c</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Vínculo 3</a>
+            </li>
+            <li>
+                <a href="../contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="tema textos agua justify">
+            <header class="portada textos image-before">
+                <h2>Textos en CSS</h2>
+            </header>
+            <article>
+                <h3>Referencias teóricas</h3>
+                <p><strong>Referencias</strong>: </p>
+                <ul>
+                    <li>
+                        <a href="../assets/pdf/UF1303_Elaboracion-hojas-de-estilo.pdf>">
+                            UF1303 - Elaboración de hojas de estilos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../assets/pdf/CSS_Manual_rapido.pdf>">
+                            Manual Rápido de CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../assets/pdf/CSS_Guia_ref_rap.pdf>">
+                            Guía de referencia rápida CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Styling_text/Fundamentals">
+                            Fundamentos de texto y fuentes tipográficas | MDN Web Docs (moz://a)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://uniwebsidad.com/libros/css/capitulo-6/texto-2">
+                            Introducción a CSS > Texto | uniwebsidad
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    <strong>Texto CSS</strong>
+                    es el módulo de CSS que define cómo realizar la manipulación de elementos de texto como los saltos de línea, la justificación, la alineación, la gestión de espacios en blanco y las transformaciones de texto.
+                </p>
+                <p>
+                    Las propiedades CSS que se usan para aplicar estilo al texto pueden clasificarse generalmente en dos categorías:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Estilos del tipo de letra</strong>:
+                        <span>
+                            Propiedades que afectan al texto (qué tipo de letra se usa, su tamaño, si es negrita, itálica, etc.).
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Estilos de disposición del texto</strong>:
+                        <span>
+                            Propiedades que afectan al espaciado y otras características relativas a la disposición del texto, lo que permite la elección de, por ejemplo, el espacio entre líneas y letras, y el modo como el texto se alinea dentro de
+                            la caja contenedora.
+                        </span>
+                    </li>
+                </ul>
+                <p class="nota">
+                    <strong>Nota</strong>:
+                    <span>
+                        Ten en cuenta que el efecto se aplica sobre todo el texto que hay dentro de un elemento como si fuera una única entidad. No puedes seleccionar y dar estilo a subsecciones de texto, a menos que las delimites con algún elemento
+                        apropiado (como <em>span</em> o <em>strong</em>), o con un pseudoelemento específico para el texto como ::first-letter (selecciona la primera letra del texto de un elemento), ::first-line (selecciona la primera línea del texto
+                        de un elemento), o ::selection (selecciona el texto que está resaltado por el cursor).
+                    </span>
+                </p>
+            </article>
+            <article>
+                <h3>Ejercicio</h3>
+                <p>
+                    Crea una hoja de estilos de nombre "textos.css" con los siguientes estilos para los textos de esta página web:
+                </p>
+                <ol>
+                    <li>
+                        Busca en Google Fonts dos familias de fuentes para textos:
+                        <ul>
+                            <li>
+                                <strong>Con serifa</strong> para los encabezados
+                            </li>
+                            <li>
+                                <strong>Sin serifa</strong> para el resto de textos
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Proporciona una lista de tipos de letra seguros en caso de que el navegador no pueda disponer del tipo de letra preferido, estableciendo la prioridad separada en la declaración por comas
+                    </li>
+                    <li>
+                        Aplica un tamaño en pixeles para los textos: Una base para todos los textos y un tamaño mayor para los encabezados desde h6 a h1
+                    </li>
+                    <li>
+                        Transforma todos los encabezados a minúsculas pero con cada inicial de palabra en mayúscula
+                    </li>
+                    <li>
+                        Aplica un color para los encabezados h2 y otro para los encabezados inferiores
+                    </li>
+                    <li>
+                        Aplica un color de base para todos los textos que no sean encabezados
+                    </li>
+                    <li>
+                        Aplica el mismo color de los elementos h2 para los elementos strong
+                    </li>
+                    <li>
+                        Aplica el mismo color de los elementos h3 en adelante para los enlaces
+                    </li>
+                    <li>
+                        Aplica a los enlaces un grueso de letra en negrita
+                    </li>
+                    <li>
+                        Aplica para los elementos figcaption un tamaño menor y con estilo en itálica
+                    </li>
+                    <li>
+                        Establece el interlineado del texto de los párrafos en 1.2 del tamaño base
+                    </li>
+                </ol>
+
+                <h4>Extras</h4>
+                <p>
+                    Estos estilos se agregan a modo de ejemplo de CSS avanzado. Referencias:
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements">
+                            Pseudoelementos CSS | MDN Web Docs (moz://a)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://uniwebsidad.com/libros/css-avanzado/capitulo-3">
+                            Selectores avanzados | uniwebsidad
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    Estilos de cajas contenedoras de texto:
+                </p>
+                <ul>
+                    <li>
+                        Se aplica un márgen a los párrafos, excepto al párrafo final y a los hijos únicos.
+                    </li>
+                    <li>
+                        Se establecen todos los enlaces en display inline-block (por compatibilidad con Internet Explorer)
+                    </li>
+                    <li>
+                        Se aplica un ejemplo de estilos CSS3 para los enlaces
+                    </li>
+                </ul>
+            </article>
+            <article class="posicion">
+                <h2>Bacground CSS</h2>
+                <figure class="caja"></figure>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2 class="pechado">Pie de página</h2>
+        <ul class="validadores">
+            <li class="validator cross-centro">
+                <a href="https://validator.w3.org/nu/" target="_blank" title="Documento HTML5 validado con Nu Html Checker">
+                    <figure class="xhtml5"></figure>
+                </a>
+            </li>
+            <li class="validator cross-centro">
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="Esta página web es un documento CSS versión 3 + SVG válido!">
+                    <figure class="w3c"></figure>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

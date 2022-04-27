@@ -1,93 +1,383 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/calculos.css" />
-    <script src="js/calculos.js"></script>
-    <script src="js/calculos2.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/normalice.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/fuentes.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/application.css" />
-    
 
-    <title>Factorial de n y multiplos</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noIndex, noFollow" />
+    <meta name="description" content="UF1306 Pruebas de funcionalidades y optimización de páginas web. Unidad Didáctica 3. Pruebas y verificación" />
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="assets/css/application.css" />
+
+    <!-- 1.b.- Verificar que eres el propietario del sitio web -->
+    <meta name="author" content="Sonia Álvarez" />
+
+    <!-- 1.e.- Refrescar la página automáticamente cada 10 segundos. -->
+    <!-- <meta http-equiv="refresh" content="10" /> -->
+
+    <!-- 1.c y 1.d -->
+    <!-- <script src="assets/js/index.js"></script> -->
+
+    <!-- 1.i.- A partir de su archivo JavaScript cree un archivo minificado para conseguir reducir al máximo su tamaño. -->
+    <!-- <script src="assets/js/index.min.js"></script> -->
+
+    <!-- 1.j.- Cree un nuevo archivo JavaScript para evitar que se vea el código fuente -->
+    <script src="assets/js/index.ofuscado.js"></script>
+
+    <title>UF1306 | Validaciones web</title>
 </head>
+
 <body>
-    <header>
-        <h1>Factorial de un número pedido al usuario y sus multiplos hasta "X"</h1>
+    <header class="distribute">
+        <a href="index.html" title="Inicio">
+            <figure class="logo"></figure>
+            <h1 class="pechado">MF0951</h1>
+        </a>
     </header>
-    <nav id="menu">
-        <ul>
-            <li id="bot1">
-                <a href="index.html" title="Calculos">Calculos</a>
+    <nav class="main-center">
+        <h2 class="pechado">Menú Principal</h2>
+        <input id="icon-menu" name="icon-menu" type="checkbox" />
+        <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar">Menú</label>
+
+        <ul class="principal">
+            <li>
+                <a href="pages/formularios.html">Formularios</a>
             </li>
-            <li id="bot2">
-                <a href="pages/documentwrite.html" title="Calculos2">Document.Write</a>
+            <li>
+                <a href="pages/css/index.html">CSS</a>
+                <ul>
+                    <li>
+                        <a href="pages/css/textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="pages/css/imagenes.html">Imágenes</a>
+                    </li>
+                    <li>
+                        <a href="#">Vínculo 2.c</a>
+                    </li>
+                </ul>
             </li>
-            <li id="bot3">
-                <a href="pages/getelement.html" title="getElement">GetElement</a>
+            <li>
+                <a href="#">Vínculo 3</a>
             </li>
-            <li id="bot4">
-                <a href="pages/sonia ID.html" title="Sonia">Sonia IDS</a>
+            <li>
+                <a href="pages/contacto.html">Contacto</a>
             </li>
-            <li id="bot5">
-                <a href="pages/noscript.html" title="NoScrip">NoScript</a>
-            </li>
-            <li id="bot6">
-                <a href="pages/calculando.html" title="Calculando">Calculando</a>
-            </li>
-        </ul>
         </ul>
     </nav>
-    <main>
-        <article class="botones">
-            <h2>OPCIONES</h2>
-            <p>
-                <input type="button" onclick="n = leerNumero()" value="Numero" />
-                <input type="button" onclick="m = leerNumero()" value="Hasta" />
-                <input type="button" onclick="mostrarResultados()" value="Mostrar resultados" />
+    <main class="agua">
+        <article>
+            <h2>Organización del proyecto web</h2>
+            <p class="color-info">
+                <strong>1.a.- ¿Cómo organizarías los distintos archivos en el disco duro?</strong>
             </p>
-            <table class="resultados">
-                <caption>MULTIPLOS</caption>
-                    <thead>
-                        <tr>
-                            <th>Número</th>
-                            <th>Hasta</th>
-                            <th>Multiplos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="td11"></td>
-                            <td id="td12"></td>
-                            <td id="td13"></td>
-                        </tr>
-                    </tbody>
-            </table>
+            <p>
+                Una opción de organización sería separar los distintos tipos de archivos en carpetas y subcarpetas.
+            </p>
+            <p>
+                Es bastante habitual ver proyectos web que tienen organizados los recursos en una carpeta llamada <strong><em>assets</em></strong> que separa en subcarpetas los tipos de recursos.
+            </p>
+            <p>
+                También suelen separarse el código html en una carpeta, p.ej. de nombre <strong><em>views</em></strong> que separa en subcarpetas las páginas estáticas, las categorías o subcategoriás del contenido web o incluso trozos de código de
+                algunos componentes
+            </p>
+            <ul class="small">
+                <li>
+                    <strong>assets</strong>
+                    <ul>
+                        <li>audio</li>
+                        <li>css</li>
+                        <li>fonst</li>
+                        <li>img</li>
+                        <li>js</li>
+                        <li>svg</li>
+                        <li>video</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>views</strong>
+                    <ul>
+                        <li>contacto</li>
+                        <li>cookies</li>
+                        <li>legal</li>
+                        <li>mapa</li>
+                        <li>nosotros</li>
+                    </ul>
+                </li>
+                <li><em>index.html</em></li>
+            </ul>
         </article>
-
-        <article class="botones">
-            <p>
-              <!--  <input type="button" onclick="n = leerNumero()" value="Numero" />
-                <input type="button" onclick="mostrarResultados()" value="Mostrar resultados" /> -->
+        <article>
+            <h2>Autoría del sitio web</h2>
+            <p class="color-info">
+                <strong>
+                    1.b.- Utiliza alguna opción para verificar que eres el propietario del sitio web que estás desarrollando. Explica cómo y por qué lo harías.
+                </strong>
             </p>
-            <table class="resultados">
-                <caption>FACTORIAL</caption>
-                    <thead>
-                        <tr>
-                            <th>Número</th>
-                            <th>Factorial</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="td1"></td>
-                            <td id="td2"></td>
-                        </tr>
-                    </tbody>
-            </table>
+            <p>
+                La opción más sencilla puede ser añadir una metaetiqueta a todas las páginas del sitio, no basta con añadir la etiqueta sólo a la página principal. Con esto se demuestra que se tiene acceso a los archivos originales pues sólo un
+                administrador del sitio web puede agregar metaetiquetas
+            </p>
+            <p>&lt;<span class="color-danger">meta </span>
+                <span class="color-warning">name</span>
+                <span>=</span>
+                <span class="color-success">"author"</span>
+                <span class="color-warning">content</span>
+                <span>=</span>
+                <span class="color-success">"Sonia Álvarez"</span>
+                <span>/></span>
+            </p>
+        </article>
+        <article>
+            <h2>Modo de funcionamiento de la página web en el navegador</h2>
+            <p class="color-info">
+                <strong>
+                    1.c.- Muestre con JavaScript, mediante un “alert” en qué modo de funcionamiento se está ejecutando la página web. Realice una captura de pantalla y diga en en qué modo está trabajando.
+                </strong>
+            </p>
+            <p>
+                Para saber en qué modo está operando un navegador al procesar una página, se puede hacer usando JavaScript y el método <em class="color-danger">document</em>.<em class="color-primary">compatMode</em>. Este método devuelve un
+                <em>string</em> con el método de funcionamiento:
+            </p>
+            <ul class="small">
+                <li>
+                    <strong>CSS1Compat</strong>
+                    <span>
+                        si está funcionando en modo estándar,
+                    </span>
+                </li>
+                <li>
+                    <strong>BackCompact</strong>
+                    <span>
+                        si está en quirksmode
+                    </span>
+                </li>
+                <li>etc ...</li>
+            </ul>
+
+            <p>
+                En respuesta, en vez de usar un <em>alert</em> se muestra a continuación el mensaje con la información sobre el modo de funcionamiento en que se está ejecutando esta página web con el método <em class="color-danger">document</em>.<em
+                    class="color-primary">getElementById</em>(<em class="color-warning">"p1c"</em>).<em class="color-danger">innerHTML</em>:
+            </p>
+            <p id="p1c" class="color-success"></p>
+            <p>
+                En este caso aparece el mensaje <em id="p1c2" class="color-success"></em>, por lo tanto está funcionando en modo stándar.
+            </p>
+        </article>
+        <article>
+            <h2>Hora actual</h2>
+            <p class="color-info">
+                <strong>
+                    1.d.- Usando alguna herramienta de depuración, mostrar la hora actual en la consola del navegador, mostrando horas, minutos y segundos.
+                </strong>
+            </p>
+            <p>
+                Véase el resultado en Consola del navegador.
+            </p>
+            <p class="color-info">
+                <strong>
+                    1.e.- Mostrar la hora actual en la página web y refrescar la página automáticamente cada 10 segundos.
+                </strong>
+            </p>
+            <p id="p1d" class="color-success"></p>
+
+            Para que la página se recargue automáticamente cada 10 segundos se añadirá la siguiente línea en el head del HTML:
+
+            <p>&lt;<span class="color-danger">meta </span>
+                <span class="color-warning">http-equiv</span>
+                <span>=</span>
+                <span class="color-success">"refresh"</span>
+                <span class="color-warning">content</span>
+                <span>=</span>
+                <span class="color-success">"10"</span>
+                <span>/></span>
+            </p>
+        </article>
+        <article>
+            <h2>Validar documentos web</h2>
+            <h3>Validar HTML5</h3>
+            <p class="color-info">
+                <strong>
+                    1.f.- Explique las distintas formas de validar el archivo html, y valide el documento html para que cumpla los estándares de html5.
+                </strong>
+            </p>
+            <p>
+                Para validar una página web html se puede hacer a través de la w3c desde su página web: http://validator.w3.org/nu
+            </p>
+            <p>
+                Al acceder a esa dirección tenemos varias opciones de validación:
+            </p>
+            <ul class="abc">
+                <li>
+                    Validar por URI. Para esto es necesario que la página web esté subida o accesible desde internet.
+                </li>
+                <li>
+                    Validar subiendo un archivo. Para esto hay que subir el archivo html.
+                </li>
+                <li>
+                    Validar introduciendo directamente el código. Esta opción consiste en copiar el texto del código html y pegarlo en el navegador web.
+                </li>
+            </ul>
+            <p>
+                No muestra ningún error ni advertencias. Se comprueba que la página ha pasado el test de validación.
+            </p>
+            <p class="color-success">
+                Document checking completed. No errors or warnings to show.
+            </p>
+            <h3>Validar CSS</h3>
+            <p class="color-info">
+                <strong>
+                    1.g.- Validar el documento css para que cumpla los estándares de css3.
+                </strong>
+            </p>
+            <p>
+                Para validar el código css se accede a la dirección: http://jigsaw.w3.org/css-validator/
+            </p>
+            <p>
+                Se dispone de 3 opciones para validar el archivo css, de forma similar que con la validación html.
+            </p>
+            <p class="color-warning">
+                En el caso de este proyecto web no validará porque he creado un pequeño workflow de ejemplo utilizando la pseudo-clase <em class="color-danger">:root</em> para que veais como TAMBIÉN se puede organizar el CSS en capas y para que
+                jugueis.
+                Pero es una operación no permitida para el Validador CSS del W3C por sobrecarga y retorna que no encuentra ninguna hoja de estilos de esta manera (Este proyecto CSS de clase funciona pero no valida).
+            </p>
+            <p>
+                Una vez pasado a puro CSS, sin variables, superará la validación del W3C.
+            </p>
+            <h3>Incluir los logotipos de cumplimiento de los stándares W3C</h3>
+            <p class="color-info">
+                <strong>
+                    1.h.- Incluir en la página web el logotipo para indicar el cumplimiento de los estándares css3.
+                </strong>
+            </p>
+            <p>
+                Se incluyen los logotipos de ambas validaciones en el pie de página
+            </p>
+        </article>
+        <article>
+            <h2>Minificar JavaScript</h2>
+            <p class="color-info">
+                <strong>
+                    1.i.- A partir de su archivo JavaScript cree un archivo minificado para conseguir reducir al máximo su tamaño. Sustituya el archivo JavaScript original por este minificado y compruebe que el funcionamiento es correcto en distintos
+                    navegadores
+                </strong>
+            </p>
+            <p>
+                En internet se pueden encontrar varios servicios online para optimizar archivos JavaScript:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://codebeautify.org/minify-js" target="_blank">Code Beautify</a>
+                </li>
+                <li>
+                    <a href="https://minify-js.com/" target="_blank">Minify JS Online</a>
+                </li>
+                <li>
+                    <a href="https://jscompress.com/" target="_blank">JSCompress</a>
+                </li>
+                <li>
+                    <a href="https://www.toptal.com/developers/javascript-minifier/" target="_blank">JavaScript Minifier</a>
+                </li>
+            </ul>
+            <p>
+                Minificar el archivo consiste en suprimir cualquier información que no sea necesaria para el navegador, como comentarios de texto, espacios en blanco o saltos de línea.
+            </p>
+            <p>
+                Se ha creado el archivo <em class="color-info">index.min.js</em> con una herramienta online de la lista y, previa comprobación de su correcto funcionamiento en distintos navegadores, se ha sustituído por el original en el head de este
+                documento HTML. Se adjunta el archivo JavaScript original y el minimizado en la carpeta <strong class="color-info"><em>/assets/js/</em></strong> de esta página web.
+            </p>
+        </article>
+        <article>
+            <h2>Ofuscar código JavaScript</h2>
+            <p class="color-info">
+                <strong>
+                    1.j.- Si quisiera evitar que el código de su archivo JavaScript fuese visible por cualquier visitante de su página web, ¿qué podría hacer?.
+                </strong>
+            </p>
+            <p>
+                Para proteger el código y evitar que cualquier visitante pueda verlo sin problemas una solución es ofuscar el código.
+            </p>
+            <p>
+                En internet se pueden encontrar varios servicios online para ofuscar archivos JavaScript. Un par de los que he encontrado que funcionan bien en todos los navegadores:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://www.obfuscator.io/" target="_blank">JavaScript Obfuscator Tool</a>
+                </li>
+                <li>
+                    <a href="https://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx" target="_blank"> Javascript Obfuscator</a>
+                </li>
+            </ul>
+            <p class="color-info">
+                <strong>
+                    Cree un nuevo archivo JavaScript para evitar que se vea el código fuente. Utilice este nuevo archivo en su página web y verifique que la página funciona correctamente y que no puede verse el código fuente original desde el
+                    navegador.
+                </strong>
+            </p>
+            <p>
+                Con el código ofuscado se puede crear un nuevo archivo JavaScript que sustituya al original, teniendo su mismo funcionamiento pero impidiendo el acceso a visualizar el código original.
+            </p>
+            <p>
+                Para probarlo se crea un nuevo archivo JS y se agrega a la carpeta de scripts del proyecto web, se enlaza el nuevo documento JavaScript con el código ofuscado en head del documento HTML de la página web y se comprueba su correcto
+                funcionamiento en distintos navegadores.
+            </p>
+            <p>
+                Para comprobar que no se puede ver el código original desde el navegador usamos la opción de ver código fuente (Ctrl + u). Pinchando en el enlace de la url del script se verá el código ofuscado.
+            </p>
+            <p>
+                Se ha creado el archivo <em class="color-info">index.ofuscado.js</em> con una herramienta online de la lista y, previa comprobación de su correcto funcionamiento en distintos navegadores, se ha sustituído por el original en el head de
+                este documento HTML. Se adjunta el archivo JavaScript original, el minimizado y el ofuscado en la carpeta <strong class="color-info"><em>/assets/js/</em></strong> de este proyecto web.
+            </p>
         </article>
     </main>
-    <footer></footer>
+    <footer>
+        <h2 class="pechado">Pie de página</h2>
+        <section class="contentinfo">
+            <address>
+                <ul>
+                    <li>
+                        <a href="https://goo.gl/maps/s3k1C7FEyn3WrrVn7" title="Ven a visitarnos" target="_blank">
+                            <span class="icon-location" aria-hidden="true"></span>
+                            <span>Av. Coruña, 500 - Lugo (Galicia)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:ifcd0110@gmx.com" title="Escríbenos" target="_blank">
+                            <span class="icon-mail" aria-hidden="true"></span>
+                            <span>ifcd0110@gmx.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+34982213467" title="Llámanos" target="_blank">
+                            <span class="icon-phone" aria-hidden="true"></span>
+                            <span>982 21 34 67</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="whatsapp://send?" title="Chatea con nosostros" target="_blank">
+                            <span class="icon-whatsapp" aria-hidden="true"></span>
+                            <span>666 555 777</span>
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </section>
+        <section class="footer__pie">
+            <ul class="validadores">
+                <li class="validator cross-centro">
+                    <a href="https://validator.w3.org/nu/" target="_blank" title="Documento HTML5 validado con Nu Html Checker">
+                        <figure class="xhtml5"></figure>
+                    </a>
+                </li>
+                <li class="validator cross-centro">
+                    <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="Esta página web es un documento CSS versión 3 + SVG válido!">
+                        <figure class="w3c"></figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 </body>
+
 </html>

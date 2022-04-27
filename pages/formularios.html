@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noIndex, noFollow" />
+    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1306 Pruebas de funcionalidades y optimización de páginas web" />
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="../assets/css/application.css" />
+
+    <!-- 1.b.- Verificar que eres el propietario del sitio web -->
+    <meta name="author" content="Sonia Álvarez" />
+
+
+    <title>UF1306 | Validación de Formularios</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="../assets/js/formularios3.js"></script>
+</head>
+
+<body>
+    <header class="distribute">
+        <a href="../index.html" title="Inicio">
+            <figure class="logo"></figure>
+            <h1 class="pechado">MF0951</h1>
+        </a>
+    </header>
+    <nav class="main-center">
+        <h2 class="pechado">Menú Principal</h2>
+        <input id="icon-menu" name="icon-menu" type="checkbox" />
+        <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar">Menú</label>
+
+        <ul class="principal">
+            <li>
+                <a href="#">Formularios</a>
+            </li>
+            <li>
+                <a href="css/index.html">CSS</a>
+                <ul>
+                    <li>
+                        <a href="css/textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="css/imagenes.html">Imágenes</a>
+                    </li>
+                    <li>
+                        <a href="#">Vínculo 2.c</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Vínculo 3</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h3>Formulario de Contacto</h3>
+
+            <form action="enviado.html" method="post" class="form" id="form">
+                <fieldset>
+                    <legend>Formulario de Contacto</legend>
+                    <ul>
+                        <li>
+                            <label for="name">Nombre</label>
+                            <!-- pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,50}" -->
+                            <!-- title="Sólo se admiten letras del alfabeto español y espacios en blanco" -->
+                            <input type="text" placeholder="Tu nombre" name="name" id="name" required />
+                        </li>
+                        <li>
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="Correo electrónico" name="email" id="email" required />
+                        </li>
+                        <li>
+                            <label for="tfno">Teléfono</label>
+                            <input type="text" placeholder="Teléfono" name="tfno" id="tfno" />
+                        </li>
+                        <li>
+                            <label for="edad">Edad</label>
+                            <input type="number" placeholder="Edad" id="edad" name="edad" />
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="genero" value="h" id="hombre" />
+                            <label for="hombre">Hombre</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="genero" value="m" id="mujer" />
+                            <label for="mujer">Mujer</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="acepto" id="acepto" />
+                            <label for="acepto">Acepto el tratamiento de mis datos personales. Más información en
+                                <a href="#">Política de tratamiento de datos personales</a>
+                            </label>
+                        </li>
+                        <li class="textarea">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea placeholder="Escribe tu mensaje aquí" name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p id="errores"></p>
+
+                <ul class="enviar">
+                    <li>
+                        <input type="submit" value="Enviar" id="enviar" />
+                    </li>
+                    <li>
+                        <input type="reset" value="Borrar" />
+                    </li>
+                </ul>
+            </form>
+        </article>
+
+        <article>
+            <h3>Cambiar contraseña</h3>
+            <form action="enviado.html" method="post" class="form" id="cambiarclave">
+                <fieldset>
+                    <legend>Resetear contraseña</legend>
+                    <ul>
+                        <li>
+                            <label for="usuario">Usuario</label>
+                            <input type="email" name="usuario" id="usuario" placeholder="Tu cuenta de correo" />
+                        </li>
+                        <li>
+                            <label for="contrasinal">Nueva contraseña</label>
+                            <input type="password" name="contrasinal" id="contrasinal" placeholder="Contraseña" />
+                        </li>
+                        <li>
+                            <label for="repetircontrasinal">Repetir contraseña</label>
+                            <input type="password" name="repetircontrasinal" id="repetircontrasinal" placeholder="Misma contraseña" />
+                        </li>
+                    </ul>
+                </fieldset>
+                <ul class="enviar">
+                    <li>
+                        <input type="submit" id="cambiarcontrasinal" value="Cambiar contraseña" />
+                    </li>
+                    <li>
+                        <input type="reset" value="Borrar" />
+                    </li>
+                </ul>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <h2 class="pechado">Pie de página</h2>
+        <section class="contentinfo">
+            <address>
+                <ul>
+                    <li>
+                        <a href="https://goo.gl/maps/s3k1C7FEyn3WrrVn7" title="Ven a visitarnos" target="_blank">
+                            <span class="icon-location" aria-hidden="true"></span>
+                            <span>Av. Coruña, 500 - Lugo (Galicia)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:ifcd0110@gmx.com" title="Escríbenos" target="_blank">
+                            <span class="icon-mail" aria-hidden="true"></span>
+                            <span>ifcd0110@gmx.com</span>
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </section>
+        <section class="footer__pie">
+            <ul class="validadores">
+                <li class="validator cross-centro">
+                    <a href="https://validator.w3.org/nu/" target="_blank" title="Documento HTML5 validado con Nu Html Checker">
+                        <figure class="xhtml5"></figure>
+                    </a>
+                </li>
+                <li class="validator cross-centro">
+                    <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="Esta página web es un documento CSS versión 3 + SVG válido!">
+                        <figure class="w3c"></figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

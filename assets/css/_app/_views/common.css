@@ -42,6 +42,81 @@
     font-size: small;
 }
 
+.image-before:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-origin: border-box;
+}
+
+/* Marca de agua */
+
+.agua:before {
+    position: fixed;
+    content: '';
+    /* top : 10vh; */
+    bottom: 5vh;
+    right: 5vh;
+    /* ratio del logo 1020/495 */
+    height: 20vh;
+    /* width de la marca de agua =  height * ratio */
+    width: 41.21vh;
+    opacity: 0.2;
+    background-image: url('../../../svg/Olympic_Rings_clip_art.svg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header.portada {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+.portada:before {
+    opacity: 1;
+    -webkit-filter: brightness(1) blur(2px) grayscale(0.8);
+    filter: brightness(1) blur(2px) grayscale(0.8);
+}
+
+.portada.textos:before {
+    background-image: var(--img_cat1_img1);
+}
+.portada.imagenes:before {
+    background-image: var(--img_cat1_img2);
+}
+
+header.portada h2 {
+    position: absolute;
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    background: rgba(51, 53, 119, 0.5);
+    top: 30%;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     background-color: var(--bg-body);
     color: var(--color-body);

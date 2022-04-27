@@ -6,6 +6,15 @@ body>footer {
     background-color: var(--color-b);
 }
 
+body > footer a {
+    color: white;
+}
+
+body > footer a:hover {
+    color: yellow;
+    border-bottom: 1px solid yellow;
+}
+
 body > footer ul.validadores {
     display: flex;
     justify-content: flex-start;

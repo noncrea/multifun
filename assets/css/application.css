@@ -36,6 +36,8 @@
 @import url('_app/_layout/header.css');
 @import url('_app/_layout/menu.css');
 @import url('_app/_layout/footer.css');
+@import url('_app/_layout/formularios.css');
+
 /*
 
 --------------------------------------------------------------------------
@@ -57,17 +59,3 @@
 */
 @import url('_app/_views/common.css');
 @import url('_app/_views/index.css');
-
-body header {
-    padding: auto;margin: auto;
-
-}
-
-body nav ul {
-    display: inline-flex ;
-    padding: auto; margin: auto; text-align: right;
-}
-body nav ul li {
-    display: inline-flex;
-    background-color: aqua;margin: 10px; padding: 1m 4em 0em 4em; align-items: center; text-align: right;
-}

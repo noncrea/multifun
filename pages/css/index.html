@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noIndex, noFollow" />
+    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1306 Pruebas de funcionalidades y optimización de páginas web" />
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
+    <title>UF1306 | Pruebas de funcionalidades y optimización de páginas web</title>
+</head>
+
+<body>
+    <!-- El header es la cabecera de la página web lleva el único encabezado h1 de la página -->
+    <header class="distribute">
+        <a href="../../index.html" title="Inicio">
+            <figure class="logo"></figure>
+            <h1 class="pechado">MF0951</h1>
+        </a>
+    </header>
+    <nav class="main-center">
+        <h2 class="pechado">Menú Principal</h2>
+        <input id="icon-menu" name="icon-menu" type="checkbox" />
+        <label for="icon-menu" class="icon-menu" aria-label="Abrir/Cerrar">Menú</label>
+
+        <ul class="principal">
+            <li>
+                <a href="../formularios.html">Formularios</a>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+                <ul>
+                    <li>
+                        <a href="textos.html">Textos</a>
+                    </li>
+                    <li>
+                        <a href="imagenes.html">Imágenes</a>
+                    </li>
+                    <li>
+                        <a href="#">Vínculo 2.c</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Vínculo 3</a>
+            </li>
+            <li>
+                <a href="../contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="tema textos agua justify">
+            <header class="portada" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/17/23/29/programming-1832991_960_720.png');">
+                <h2>Pruebas y optimización de páginas web</h2>
+            </header>
+            <article class="article index">
+                <h3>Las tres capas del diseño web</h3>
+                <p>
+                    Los estándares Web fomentan la separación de un contenido Web en 3 capas:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Contenido</strong>:
+                        <span>
+                            Define estructura semántica y contenido de texto plano, se representa con el documento HTML.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Presentación</strong>:
+                        <span>
+                            Añade el aspecto del contenido, lo representa la hoja de estilo CSS
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Comportamiento</strong>:
+                        <span>
+                            Añade mayor grado de interacción y funciones complejas, es posible representarlo con un documento JS o de otras tecnologías semejantes
+                        </span>
+                    </li>
+                </ul>
+                <figure class="img">
+                    <img src="assets/img/index_capas-disenho-web.jpeg" alt="Descripcion de las capas del desarrollo web" />
+                    <figcaption>
+                        Fig.1.- Capas del diseño web: Estructura, Contenido, Apariencia y Comportamiento
+                    </figcaption>
+                </figure>
+                <p>
+                    Un documento html es un visualizador de la información.
+                </p>
+                <p>
+                    Para hacer más atractivo este documento html , podemos utilizar diversas posibilidades como: combinación de colores, distintos tipos de letras, fondo del documento, ubicación por coordenadas en píxeles de un determinado texto,
+                    etc. Todas esas posibilidades las tenemos en las hojas de estilo o Style Sheets. Las hojas de estilo son una extensión del documento HTML, en las que se diseña la apariencia general del mismo.
+                </p>
+                <p>
+                    Las principales ventajas de utilizar las hojas de estilo son:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Accesibilidad</strong>:
+                        <span>
+                            Los datos se pueden presentar en función del usuario y adaptarlos a sus necesidades. No es lo mismo presentar una web en un Pc, que presentarla en un teléfono móvil, o presentarla a personas con alguna discapacidad.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Mantenimiento</strong>:
+                        <span>
+                            Separa y centraliza la presentación, bien en diferentes archivos o en partes bien conocidas del archivo, con lo cual tenemos localizado el código que queremos mantener y/o actualizar
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Simplicidad</strong>:
+                        <span>
+                            Se obtienen documentos más fáciles de entender y se reduce el tamaño de los mismos.
+                        </span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2 class="pechado">Pie de página</h2>
+        <ul class="validadores">
+            <li class="validator cross-centro">
+                <a href="https://validator.w3.org/nu/" target="_blank" title="Documento HTML5 validado con Nu Html Checker">
+                    <figure class="xhtml5"></figure>
+                </a>
+            </li>
+            <li class="validator cross-centro">
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="Esta página web es un documento CSS versión 3 + SVG válido!">
+                    <figure class="w3c"></figure>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
