@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,19 +10,29 @@
     <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="../../assets/css/application.css" />
 
-    <!-- 1.b.- Verificar que eres el propietario del sitio web -->
     <meta name="author" content="Sonia Álvarez" />
 
+    <script src="../../assets/js/matrix.js"></script>
+    <script src="../../assets/js/snowstorm.js"></script>
 
-    <title>UF1306 | Validación de Formularios</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-    <script src="../../assets/js/formularios3.js"></script>
-<style>
-.matrix {font-size:16px;text-align:center;width:100px;}
-</style>
+
+    <title>UF1305 y UF1306 </title>
+
+    <style>
+        #matrix {
+            width: 100%;
+        }
+        .matrix {
+            font-size: 1.5em;
+            text-align: center;
+            width: 100px;
+            height: 40px;
+        }
+        /* .matrix {font-size:10px;text-align:center;width:10px;} */
+    </style>
 </head>
-<body>
+
+<body class="nocturno">
     <header class="distribute">
         <a href="../../index.html" title="Inicio">
             <figure class="logo"></figure>
@@ -35,11 +46,11 @@
 
         <ul class="principal">
             <li>
-                <a href="#">JavaScripts</a>
+                <a href="#">JavasScript</a>
                 <ul>
                     <li>
                         <a href="formularios.html">Formularios</a>
-                    </li>                       
+                    </li>
                 </ul>
             </li>
             <li>
@@ -54,7 +65,7 @@
                     <li>
                         <a href="#">Vínculo 2.c</a>
                     </li>
-                </ul>                           
+                </ul>
             </li>
             <li>
                 <a href="#">Vínculo 3</a>
@@ -64,79 +75,256 @@
             </li>
         </ul>
     </nav>
-    
- <style> body {background-color: black;} </style>
+    <main>
+        <div id="matrix">&nbsp; Efecto matrix con Javascript &nbsp;</div>
 
- <script src="../../assets/js/snow/snowstorm.js"></script>
+        <section>
+            <h2>Página web con scripts de terceros encontrados en internet</h2>
 
+            <p>
+                <strong>Pregunta 2. </strong>
+                Creación de una página web donde insertaremos algunos scripts encontrados en internet.
+            </p>
+            <article>
+                <h3>Scripts en internet</h3>
+                <p>
+                    <strong> 2.a. </strong>
+                    Busque en internet páginas que recopilen scripts de JavaScript organizados por categorías.
+                </p>
 
-
- <script class="matrix">
- var rows=11;var speed=10;var reveal=2;var effectalign="center"
- var w3c=document.getElementById&&!window.opera;;var ie45=document.all&&!window.opera;var ma_tab,matemp,ma_bod,ma_row,x,y,columns,ma_txt,ma_cho;var m_coch=new Array();var m_copo=new Array();window.onload=function(){if(!w3c&&!ie45)return
- var matrix=(w3c)?document.getElementById("matrix"):document.all["matrix"];ma_txt=(w3c)?matrix.firstChild.nodeValue:matrix.innerHTML;ma_txt=" "+ma_txt+" ";columns=ma_txt.length;if(w3c){while(matrix.childNodes.length)matrix.removeChild(matrix.childNodes[0]);ma_tab=document.createElement("table");ma_tab.setAttribute("border",0);ma_tab.setAttribute("align",effectalign);ma_tab.style.backgroundColor="#000000";ma_bod=document.createElement("tbody");for(x=0;x<rows;x++){ma_row=document.createElement("tr");for(y=0;y<columns;y++){matemp=document.createElement("td");matemp.setAttribute("id","Mx"+x+"y"+y);matemp.className="matrix";matemp.appendChild(document.createTextNode(String.fromCharCode(160)));ma_row.appendChild(matemp);}
- ma_bod.appendChild(ma_row);}
- ma_tab.appendChild(ma_bod);matrix.appendChild(ma_tab);}else{ma_tab='<ta'+'ble align="'+effectalign+'" border="0" style="background-color:#000000">';for(var x=0;x<rows;x++){ma_tab+='<t'+'r>';for(var y=0;y<columns;y++){ma_tab+='<t'+'d class="matrix" id="Mx'+x+'y'+y+'">&nbsp;</'+'td>';}
- ma_tab+='</'+'tr>';}
- ma_tab+='</'+'table>';matrix.innerHTML=ma_tab;}
- ma_cho=ma_txt;for(x=0;x<columns;x++){ma_cho+=String.fromCharCode(32+Math.floor(Math.random()*94));m_copo[x]=0;}
- ma_bod=setInterval("mytricks()",speed);}
- function mytricks(){x=0;for(y=0;y<columns;y++){x=x+(m_copo[y]==100);ma_row=m_copo[y]%100;if(ma_row&&m_copo[y]<100){if(ma_row<rows+1){if(w3c){matemp=document.getElementById("Mx"+(ma_row-1)+"y"+y);matemp.firstChild.nodeValue=m_coch[y];}
- else{matemp=document.all["Mx"+(ma_row-1)+"y"+y];matemp.innerHTML=m_coch[y];}
- matemp.style.color="#33ff66";matemp.style.fontWeight="bold";}
- if(ma_row>1&&ma_row<rows+2){matemp=(w3c)?document.getElementById("Mx"+(ma_row-2)+"y"+y):document.all["Mx"+(ma_row-2)+"y"+y];matemp.style.fontWeight="normal";matemp.style.color="#00ff00";}
- if(ma_row>2){matemp=(w3c)?document.getElementById("Mx"+(ma_row-3)+"y"+y):document.all["Mx"+(ma_row-3)+"y"+y];matemp.style.color="#009900";}
- if(ma_row<Math.floor(rows/2)+1)m_copo[y]++;else if(ma_row==Math.floor(rows/2)+1&&m_coch[y]==ma_txt.charAt(y))zoomer(y);else if(ma_row<rows+2)m_copo[y]++;else if(m_copo[y]<100)m_copo[y]=0;}
- else if(Math.random()>0.9&&m_copo[y]<100){m_coch[y]=ma_cho.charAt(Math.floor(Math.random()*ma_cho.length));m_copo[y]++;}}
- if(x==columns)clearInterval(ma_bod);}
- function zoomer(ycol){var mtmp,mtem,ytmp;if(m_copo[ycol]==Math.floor(rows/2)+1){for(ytmp=0;ytmp<rows;ytmp++){if(w3c){mtmp=document.getElementById("Mx"+ytmp+"y"+ycol);mtmp.firstChild.nodeValue=m_coch[ycol];}
- else{mtmp=document.all["Mx"+ytmp+"y"+ycol];mtmp.innerHTML=m_coch[ycol];}
- mtmp.style.color="white";mtmp.style.fontWeight="lighter";}
- if(Math.random()<reveal){mtmp=ma_cho.indexOf(ma_txt.charAt(ycol));ma_cho=ma_cho.substring(0,mtmp)+ma_cho.substring(mtmp+1,ma_cho.length);}
- if(Math.random()<reveal-1)ma_cho=ma_cho.substring(0,ma_cho.length-1);m_copo[ycol]+=199;setTimeout("zoomer("+ycol+")",speed);}
- else if(m_copo[ycol]>200){if(w3c){mtmp=document.getElementById("Mx"+(m_copo[ycol]-201)+"y"+ycol);mtem=document.getElementById("Mx"+(200+rows-m_copo[ycol]--)+"y"+ycol);}
- else{mtmp=document.all["Mx"+(m_copo[ycol]-201)+"y"+ycol];mtem=document.all["Mx"+(200+rows-m_copo[ycol]--)+"y"+ycol];}
- mtmp.style.fontWeight="normal";mtem.style.fontWeight="normal";setTimeout("zoomer("+ycol+")",speed);}
- else if(m_copo[ycol]==200)m_copo[ycol]=100+Math.floor(rows/2);if(m_copo[ycol]>100&&m_copo[ycol]<200){if(w3c){mtmp=document.getElementById("Mx"+(m_copo[ycol]-101)+"y"+ycol);mtmp.firstChild.nodeValue=String.fromCharCode(160);mtem=document.getElementById("Mx"+(100+rows-m_copo[ycol]--)+"y"+ycol);mtem.firstChild.nodeValue=String.fromCharCode(160);}
- else{mtmp=document.all["Mx"+(m_copo[ycol]-101)+"y"+ycol];mtmp.innerHTML=String.fromCharCode(160);mtem=document.all["Mx"+(100+rows-m_copo[ycol]--)+"y"+ycol];mtem.innerHTML=String.fromCharCode(160);}
- setTimeout("zoomer("+ycol+")",speed);}}
- </script>
- <div id="matrix">&nbsp; Hola Don Pepito · Hola Don José &nbsp;</div>
- 
-</body>
-<footer>
-    <h2 class="pechado">Pie de página</h2>
-    <section class="contentinfo">
-        <address>
-            <ul>
+                <article>
+                    <h4 id="dinamicdrive">2.a.2.- Dinamic Drive</h4>
+                    <p>
+                        ¡Bienvenido a
+                        <a href="http://www.dynamicdrive.com/" target="_blank">Dinamic Drive</a>, el lugar número 1 en la red para obtener DHTML y Javascripts originales y gratuitos para mejorar su sitio web!
+                    </p>
+                    <ul class="categorias">
+                        <li>
+                            <strong>Categorías de scripts</strong>
+                            <ul>
+                                <li>
+                                    <a href="http://www.dynamicdrive.com/dynamicindex7/index.html" target="_blank">
+                                        Calendarios
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.dynamicdrive.com/dynamicindex6/index.html" target="_blank">
+                                        Fecha y hora
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.dynamicdrive.com/dynamicindex3/index.html" target="_blank">
+                                        Efectos del Documento
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.dynamicdrive.com/dynamicindex17/index.html" target="_blank">Contenido dinámico</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.dynamicdrive.com/dynamicindex16/index.html" target="_blank">Efectos de formulario</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.dynamicdrive.com/dynamicindex12/index.html" target="_blank">Juegos</a>
+                                </li>
+                                <li>
+                                    Y más en <a href="http://www.dynamicdrive.com/" target="_blank">Dinamic Drive</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h4>2.a.3.- Las 40 mejores bibliotecas y frameworks de JavaScript para 2022</h4>
+                    <p>
+                        Hoy en día lo más utilizado nos son API's o frameworks completos, cada uno con sus características y especialidades, p.ej.:
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://jquery.com/">JQuery</a>
+                        </li>
+                        <li>
+                            <a href="https://reactjs.org/" target="_blank">React.js</a>
+                        </li>
+                        <li>
+                            <a href="https://d3js.org/" target="_blank">D3.js</a>
+                        </li>
+                        <li>
+                            <a href="https://underscorejs.org/" target="_blank">Underscode.js</a>
+                        </li>
+                        <li>
+                            <a href="https://lodash.com/" target="_blank">Lodash</a>
+                        </li>
+                        <li>
+                            <a href="https://community.algolia.com/places/" target="_blank">Algolia Places</a>
+                        </li>
+                        <li>
+                            <a href="https://animejs.com/" target="_blank">Anime.js</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"></a>
+                        </li>
+                        <li>Etc...</li>
+                    </ul>
+                </article>
+            </article>
+            <article>
+                <h3>Script para insertar un reloj en la web</h3>
+                <p>
+                    <strong>2.b.- </strong>
+                    Busque en internet algún script que sirva para insertar un reloj en nuestra página web.
+                </p>
+                <p>
+                    Widget reloj cortesía de
+                    <a href="https://www.zeitverschiebung.net/es/clock-widget" target="_blank">Reloj Widget gratuito para su página web o blog</a>
+                </p>
+            </article>
+            <article>
+                <h3>Insertar efecto "nieve" en la web</h3>
+                <p>
+                    <strong>2.d.-</strong>
+                    Script cortesía de
+                    <a href="http://www.schillmania.com/projects/snowstorm/" target="_blank">SchillMania</a>
+                </p>
+            </article>
+        </section>
+        <article>
+            <h2>Expresiones regulares</h2>
+            <p><strong>Pregunta 3</strong></p>
+            <p>
+                Referencias
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions" tarjet="_blank">Expresiones Regulares</a>
+                    </li>
+                    <li>
+                        <a href="https://code.tutsplus.com/es/tutorials/8-regular-expressions-you-should-know--net-6149" target="_blank">8 Expresiones regulares, que debes conocer (bien explicado)</a>
+                    </li>
+                    <li>
+                        <a href="https://programacion.net/articulo/25_expresiones_regulares_que_todo_programador_web_deberia_conocer_1213" target="_blank">25 expresiones regulares que todo programador web debería conocer</a>
+                    </li>
+                </ul>
+            </p>
+            <ol class="abc regex">
                 <li>
-                    <a href="https://goo.gl/maps/s3k1C7FEyn3WrrVn7" title="Ven a visitarnos" target="_blank">
-                        <span class="icon-location" aria-hidden="true"></span>
-                        <span>Av. Coruña, 500 - Lugo (Galicia)</span>
-                    </a>
+                    <strong>Buscar una expresión para verificar un código postal. Ejemplo: 29840</strong>
+                    <ol class="123">
+                        <li>
+                            <span>Únicamente con5 cifras numéricas</span>
+                            <em> /^\d{5}$/</em>
+                        </li>
+                        <li>
+                            <span>El código postal en España son cinco números. Los dos primeros van del 01 al 52 y los tres restantes pueden ser cualquier valor numérico</span>
+                            <em>/^0[1-9][0-9]{3}|[1-4][0-9]{4}|5[0-2][0-9]{3}$/</em>
+                        </li>
+                    </ol>
                 </li>
                 <li>
-                    <a href="mailto:ifcd0110@gmx.com" title="Escríbenos" target="_blank">
-                        <span class="icon-mail" aria-hidden="true"></span>
-                        <span>ifcd0110@gmx.com</span>
+                    <strong>
+                        Buscar una expresión para que la fecha tenga formato DD/MM/AAAA. Ejemplo: 20/01/2016
+                    </strong>
+                    <ol class="123">
+                        <li>
+                            <span>Comienza (^) por una cifra numérica (\d) de la que habrá 2 ocurrencias ({2}), después una barra (\/), seguida de 2 cifras numéricas, otra barra, 4 cifras numéricas, y aquí acabará la cadena ($). </span>
+                            <em>/^\d{2}\/\d{2}\/\d{4}$/</em>
+                        </li>
+                        <li>
+                            <span>Se permiten tanto valores del tipo 1/1/2016 como 01/01/2016 y se restringen los valores para día mes y año</span>
+                            <em>/^(?:0?[1-9]|[12][0-9]|3[01])([/ -\\])(?:0?[1-9]|1[012])\\1[12][0-9]{3}$/</em>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Buscar una expresión para validar un email. Ejemplo: nombre@gmail.com</strong>
+                    <ol class="123">
+                        <li>
+                            <span>Comienza (^) por caracteres cualesquiera que no sean salto de línea (.) de los que habrá al menos una ocurrencia (+), después el carácter arroba (\@), seguido de al menos un carácter que no podrá ser el salto de línea (.+), después viene el carácter punto (\.), seguido de al menos un carácter donde ninguno podrá ser el salto de línea (.+), y aquí acabará la cadena ($)</span>
+                            <em> /^(.+\@.+\..+)$/ </em>
+                        </li>
+                        <li>
+                            <span>Fuente: <a href="http://www.mkyong.com/" target="_blank">Mykong</a></span>
+                            <em>/^[_A-Za-z0-9-]+(?:\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(?:\\.[A-Za-z0- 9]+)*(?:\\.[A-Za-z]{2,})$/</em>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Buscar una expresión para validar un número de teléfono nacional. Ejemplo 952551155</strong>
+                    <ol class="123">
+                        <li>
+                            <span>Comienza (^) por una cifra numérica (\d) de la que habrá 9 ocurrencias ({9}) y aquí acabará la cadena ($)</span>
+                            <em>/^\d{9}$/ o también /^[0-9]{9}$/</em>
+                        </li>
+                        <li>
+                            <span>
+                                Permite prefijo internacional (hasta 5 dígitos) que pueden estar precedidos de un carácter ‘+’ y pueden estar entre paréntesis, más el número en si. El número está en formato de dos números seguidos, espacio opcional, un ciclo de 6 números más espacio opcional y un número al terminar. De esta manera se permiten formatos como XXXXXXXXX, XXX XXX XXX, XX XXX XX XX o XXX XX XX XX
+                            </span>
+                            <em>/^(?:[+]?(?:[0-9]{1,5}|\\x28[0-9]{1,5}\\x29)[ ]?)?[0-9]{2}(?:[0-9][ ]?){6}[0-9]$/</em>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </article>
+
+
+    </main>
+    <footer>
+        <h2 class="pechado">Pie de página</h2>
+        <section class="contentinfo">
+            <address>
+                <ul>
+                    <li>
+                        <a href="https://goo.gl/maps/s3k1C7FEyn3WrrVn7" title="Ven a visitarnos" target="_blank">
+                            <span class="icon-location" aria-hidden="true"></span>
+                            <span>Av. Coruña, 500 - Lugo (Galicia)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:ifcd0110@gmx.com" title="Escríbenos" target="_blank">
+                            <span class="icon-mail" aria-hidden="true"></span>
+                            <span>ifcd0110@gmx.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+34982213467" title="Llámanos" target="_blank">
+                            <span class="icon-phone" aria-hidden="true"></span>
+                            <span>982 21 34 67</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="whatsapp://send?" title="Chatea con nosostros" target="_blank">
+                            <span class="icon-whatsapp" aria-hidden="true"></span>
+                            <span>666 555 777</span>
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </section>
+        <section class="footer__pie">
+            <ul class="validadores">
+                <li class="validator cross-centro">
+                    <a href="https://validator.w3.org/nu/" target="_blank" title="Documento HTML5 validado con Nu Html Checker">
+                        <figure class="xhtml5"></figure>
+                    </a>
+                </li>
+                <li class="validator cross-centro">
+                    <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="Esta página web es un documento CSS versión 3 + SVG válido!">
+                        <figure class="w3c"></figure>
                     </a>
                 </li>
             </ul>
-        </address>
-    </section>
-    <section class="footer__pie">
-        <ul class="validadores">
-            <li class="validator cross-centro">
-                <a href="https://validator.w3.org/nu/" target="_blank" title="Documento HTML5 validado con Nu Html Checker">
-                    <figure class="xhtml5"></figure>
-                </a>
-            </li>
-            <li class="validator cross-centro">
-                <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="Esta página web es un documento CSS versión 3 + SVG válido!">
-                    <figure class="w3c"></figure>
-                </a>
-            </li>
-        </ul>
-    </section>
-</footer>
-</html>    
+        </section>
+    </footer>
+</body>
+
+</html>
