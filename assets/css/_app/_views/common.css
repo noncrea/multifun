@@ -69,7 +69,7 @@
     /* width de la marca de agua =  height * ratio */
     width: 41.21vh;
     opacity: 0.2;
-    background-image: url('../../../svg/Olympic_Rings_clip_art.svg');
+    background-image: url('../../../svg/logo.svg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,7 +224,6 @@ header.portada {
 
 .portada:before {
     opacity: 1;
-    -webkit-filter: brightness(1) blur(2px) grayscale(0.8);
     filter: brightness(1) blur(2px) grayscale(0.8);
 }
 
@@ -248,16 +247,19 @@ header.portada h2 {
 
 body.nocturno {
     background-color: black;
+}
+main.nocturno {
+    background-color: black;
     color: white;
 }
 
-body.nocturno a {
+main.nocturno a {
     color: yellow;
 }
 
-body.nocturno a:target,
-body.nocturno a:focus,
-body.nocturno a:hover {
+main.nocturno a:target,
+main.nocturno a:focus,
+main.nocturno a:hover {
     color: white;
     border-bottom: 1px solid white;
 }
