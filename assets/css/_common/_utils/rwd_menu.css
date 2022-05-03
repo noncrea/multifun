@@ -214,7 +214,7 @@ body>nav #icon-menu {
     body>nav ul.principal {
         width: 100%;
         height: 100%;
-        max-height: calc(100vh - var(--height-header));
+        max-height: calc(100vh);
         overflow-y: auto;
         display: none;
     }
