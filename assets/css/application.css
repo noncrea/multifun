@@ -9,6 +9,7 @@
 @import url('_common/_vendors/normalize.css');
 @import url('_app/_theme/base.css');
 @import url('_app/_theme/variables.css');
+body {display:none;}
 /*
 
 -------------------------------------
